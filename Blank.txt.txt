@@ -1,1 +1,14 @@
-Test automation 
+•	I have a total  7 plus years of experience working as a UI developer. 
+	•	I have worked on html, css, javascript, Jquery, typescript and angular. 
+	•	Currently we are using angular 15. 
+	•	But I have also used angular 4,6, 7,10 before and also angular js.
+	•	Also i know the changes in angular 15 and 17
+	•	I have working knowledge in react js.
+	•	For version control we were using GIT and I also have experience of using a bitbucket.
+	•	For the Deployment  we were using Jenkins. 
+For the methodology I used to work in Agile. We had a sprint of 2 weeks. There we had to do a sprint demo. I was taking care of the demo on behalf of onshore and Offshore team members.
+
+Also I used to participate in PI planning meetings.
+
+•	To track the user story I have used  Jira.
+	•	In Angular I have created components, services, custom pipes, directives, modules, interfaces, also used Rxjs library, and  NGRX.
