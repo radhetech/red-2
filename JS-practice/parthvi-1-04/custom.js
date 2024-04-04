@@ -57,13 +57,13 @@ function addstudent() {
     secondaryStudent.forEach(function(i){
         totalSecondaryStudent ++;
     })
-    document.getElementById('ttl-sec-stud').innerHTML = 'Total Primary Student -'+ totalSecondaryStudent;
+    document.getElementById('ttl-sec-stud').innerHTML = 'Total Seconday Student -'+ totalSecondaryStudent;
    
     var totalCollageStudent= 0;
     collageStudent.forEach(function(i){
         totalCollageStudent++;
     })
-    document.getElementById('ttl-clg-stud').innerHTML = 'Total Primary Student -'+ totalCollageStudent;
+    document.getElementById('ttl-clg-stud').innerHTML = 'Total Collage Student -'+ totalCollageStudent;
     
     if (totalPrimaryStudent >= 1) {
         document.getElementById("rp").disabled = false;
