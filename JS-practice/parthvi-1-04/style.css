@@ -1,0 +1,103 @@
+body {
+    background-color: #fff6f6;
+}
+
+.main-sec {
+    padding-top: 50px;
+    border-width: 7px;
+    background-color: #fff;
+    border-color: #ee0b1e;
+    border-style: double;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.main-title h1 {
+    font-size: 32px;
+}
+
+.add-student {
+    padding-bottom: 40px;
+}
+
+input {
+    width: 31%;
+    margin-right: 25px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.add-btn {
+    padding: 5px 127px;
+    color: #fff;
+    background-color: #da2534;
+    border: none;
+    border-radius: 10px;
+}
+
+.student-display,
+.Ttl-num-stud {
+    padding: 0 50px;
+}
+
+.student-display .name-col {
+    padding: 0 8px;
+}
+
+.inner-sec {
+    border: 3px solid #da2534;
+    min-height: 40vh;
+}
+
+h3 {
+    font-size: 23px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.inner-sec h3:after {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    width: 77%;
+    height: 0.8px;
+    background: rgb(222, 81, 81);
+}
+
+.inner-sec h4{
+    margin-left: 8px;
+    font-weight: 300;
+}
+
+.Ttl-num-stud h3 {
+    text-align: start !important;
+}
+
+#rp,
+#rs,
+#rc {
+    width: 98%;
+    padding: 5px 50px;
+    color: #fff;
+    background-color: #da2534;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+button:disabled,
+button[disabled]{
+  /* border: 1px solid #999999; */
+  background-color: #f87171 !important;
+  color: #fff !important;
+}
+:focus-visible {
+    outline: none;
+}
