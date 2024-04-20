@@ -1,0 +1,66 @@
+// $hightBox: 100px;
+// $widhtBox: 100px;
+// $displayBox: inline-block;
+@mixin boxStyle {
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 60px;
+}
+.head1 {
+    background-color: Tomato;
+    @include boxStyle;
+}
+
+.head2 {
+    background-color: orange;
+    @include boxStyle;
+}
+
+.head3 {
+    background-color: DodgerBlue;
+    @include boxStyle;
+}
+
+.head4 {
+    background-color: MediumSeaGreen;
+    @include boxStyle;
+}
+
+.head5 {
+    background-color: Gray;
+    @include boxStyle;
+}
+
+.head6 {
+    background-color: SlateBlue;
+    @include boxStyle;
+}
+
+.head7 {
+    background-color: Violet;
+    @include boxStyle;
+}
+
+.head8 {
+    background-color: LightGray;
+    @include boxStyle;
+}
+.head9 {
+    background-color: lightcoral;
+    @include boxStyle;
+}
+.head10 {
+    background-color: midnightblue;
+    @include boxStyle;
+}
+.head11 {
+    background-color: palevioletred;
+    @include boxStyle;
+}
+.head12 {
+    background-color: yellowgreen;
+    @include boxStyle;
+}

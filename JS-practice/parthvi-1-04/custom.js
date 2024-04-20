@@ -1,6 +1,7 @@
 var primaryStudent = [];
 var secondaryStudent = [];
 var collageStudent = [];
+var res = [];
 
 //add students
 function addstudent() {
@@ -22,7 +23,7 @@ function addstudent() {
             return student.studentName + " - " + student.studentAge + "<br>";
         })
         document.getElementById('student_primary').innerHTML = newArrG.join("");
-        document.getElementById('r_student_primary').innerHTML = newArrG.join("");
+        // document.getElementById('r_student_primary').innerHTML = newArrG.join("");
     }
     else if (student_age >= 16 && student_age <= 17) {
         secondaryStudent.push(students);
@@ -30,7 +31,7 @@ function addstudent() {
             return student.studentName + " - " + student.studentAge + "<br>";
         })
         document.getElementById('student_secondary').innerHTML = newArrG.join("");
-        document.getElementById('r_student_secondary').innerHTML = newArrG.join("");
+        // document.getElementById('r_student_secondary').innerHTML = newArrG.join("");
     }
     else if (student_age >= 18 && student_age <= 70) {
         collageStudent.push(students);
@@ -38,7 +39,7 @@ function addstudent() {
             return student.studentName + " - " + student.studentAge + "<br>";
         })
         document.getElementById('student_collage').innerHTML = newArrG.join("");
-        document.getElementById('r_student_collage').innerHTML = newArrG.join("");
+        // document.getElementById('r_student_collage').innerHTML = newArrG.join("");
     }
     else if (student_age < 5) {
         alert("You're not eligible for Primary School")
@@ -74,17 +75,17 @@ function addstudent() {
     if (totalCollageStudent >= 1) {
         document.getElementById("rc").disabled = false;
     } 
-    
+     
 }
 // Remove Student
 function removePrimary(){
-    primaryStudent.splice(-1);
-    var primaryRemoveStud = primaryStudent.map(function (student) {
+   var res = primaryStudent.splice(-1);
+   console.log()
+    var primaryRemoveStud = res.map(function (student) {
         return student.studentName + " - " + student.studentAge + "<br>";
     })
     document.getElementById('r_student_primary').innerHTML = primaryRemoveStud.join("");
-    document.getElementById('student_primary').innerHTML = primaryRemoveStud.join("");
-    document.getElementById('ttl-pri-stud').innerHTML = 'Total Primary Student -'+ primaryRemoveStud.length;
+    // document.getElementById('ttl-pri-stud').innerHTML = 'Total Primary Student -'+ primaryRemoveStud.length;
     if(primaryRemoveStud == 0){
         document.getElementById("rp").disabled = true;
     }
@@ -95,8 +96,7 @@ function removeSecondary(){
         return student.studentName + " - " + student.studentAge + "<br>";
     })
     document.getElementById('r_student_secondary').innerHTML = secondaryRemoveStud.join("");
-    document.getElementById('student_secondary').innerHTML = secondaryRemoveStud.join("");
-    document.getElementById('ttl-sec-stud').innerHTML = 'Total Secondary Student -'+ secondaryRemoveStud.length;
+    // document.getElementById('ttl-sec-stud').innerHTML = 'Total Secondary Student -'+ secondaryRemoveStud.length;
     if(secondaryRemoveStud == 0){
         document.getElementById("rs").disabled = true;
     }
@@ -107,8 +107,7 @@ function removeCollage(){
         return student.studentName + " - " + student.studentAge + "<br>";
     })
     document.getElementById('r_student_collage').innerHTML = collageRemoveStud.join("");
-    document.getElementById('student_collage').innerHTML = collageRemoveStud.join("");
-    document.getElementById('ttl-clg-stud').innerHTML = 'Total Collage Student -'+ collageRemoveStud.length;
+    // document.getElementById('ttl-clg-stud').innerHTML = 'Total Collage Student -'+ collageRemoveStud.length;
     if(collageRemoveStud == 0){
         document.getElementById("rc").disabled = true;
     }
